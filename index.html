@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic manager</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/homeMobile.css" media="(max-width: 1000px)">
+    <link rel="stylesheet" href="css/commonMobile.css" media="(max-width: 850px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
+</head>
+
+<body>
+
+    <script defer src="script.js"></script>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="
+    if (submitted) {window.location='thankPage.html'}"></iframe>
+
+    <header class="header">
+        <div class="header__inner inner flex">
+            <div class="mobile__wrapper flex">
+                <a href="/" class="flex logo_wrapper">
+                    <img src="./images/logo.svg" class="logo__img" alt="remote employees">
+                    <div class="logo__text">
+                        <div class="logo__text--main">RemotEmployees</div>
+                        <div class="logo__text--sub">The outstaffing company</div>
+                    </div>
+                </a>
+                <button class="menu-icon" aria-label="menu">
+                    <span class="menu-icon-block"></span>
+                    <span class="menu-icon-block"></span>
+                    <span class="menu-icon-block"></span>
+                </button>
+            </div>
+            <nav class="navigation flex">
+                <ul class="navigation_list flex">
+                    <li class="navigation_item">
+                        <a href="#tasks" class="navigation_link">Требования</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#about" class="navigation_link">О нас</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a href="#contact" class="navigation_link">Подать заявку</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <article class="banner">
+            <div class="banner__inner inner flex">
+                <div class="banner_info">
+                    <img src="./images/gear.svg" alt="movingGear medium" class="movingGear med">
+                    <img src="./images/gear.svg" alt="movingGear small" class="movingGear small">
+                    <h1 class="banner__title title">Разработчик <span class="green">Shopify</span></h1>
+                    <p class="banner__description description">
+                        В IT компанию требуется Разработчик Shopify удаленно с хорошим знанием английского языка для
+                        работы с зарубежными проектами.
+                    </p>
+                    <a href="#contact" class="button flex">Подать заявку
+                        <span class="circle"></span>
+                    </a>
+
+                    <img src="./images/gear.svg" alt="movingGear big" class="movingGear big">
+                </div>
+                <object data="./images/banner.svg" type="image/svg+xml" aria-label="Descussion about Shopify"
+                    class="banner__img image">Descussion about
+                    Shopify</object>
+            </div>
+        </article>
+        <section class="aboutUs" id="about">
+            <div class="aboutUs__inner inner flex">
+                <div class="aboutUs_info">
+                    <h2 class="aboutUs__title title">О компании <span class="green">RemotEmployees</span></h2>
+                    <p class="aboutUs__description description">
+                        Мы - аутстаффинговая компания, которая предоставляет рабочие места в Украине ориентируясь на
+                        международный рынок.
+                    </p>
+                    <p class="aboutUs__description description">
+                        Сотрудничество с нами позволит вам приобрести бесценный опыт в сфере IT, а также развить навыки
+                        общения с иностранными носителями языка.
+                    </p>
+                </div>
+                <object data="./images/aboutUS.svg" type="image/svg+xml" class="aboutUs__img image"
+                    aria-label="Descussion about RemotEmployees">Descussion about
+                    RemotEmployees</object>
+            </div>
+        </section>
+        <section class="tasks" id="tasks">
+            <div class="tasks__inner inner">
+                <img src="./images/gearWhite.svg" alt="movingGear big" class="movingGear big">
+                <h2 class="tasks__title title">Основные задачи и требования к <span class="green">Shopify</span>
+                    разработчику</h2>
+                <ul class="tasks__list">
+                    <li class="task_item">
+                        <img src="images/comp.svg" class="task__image" alt="computer icon">
+                        <p class="task_description description">Создание функциональных возможностей на платформе;</p>
+                    </li>
+                    <li class="task_item">
+                        <img src="images/note.svg" class="task__image" alt="note icon">
+                        <p class="task_description description">Желателен опыт работы с Shopify; </p>
+                    </li>
+                    <li class="task_item">
+                        <img src="images/htmlCode.svg" class="task__image" alt="Html Code icon">
+                        <p class="task_description description">Базовые знания HTML / CSS / JavaScript;</p>
+                    </li>
+                    <li class="task_item">
+                        <img src="images/phone.svg" class="task__image" alt="phone icon">
+                        <p class="task_description description">Плюсом будет опыт разработки приложений</p>
+                    </li>
+                    <li class="task_item">
+                        <img src="images/php.svg" class="task__image" alt="php icon">
+                        <p class="task_description description">Планирование и разработка, создание концепции новых
+                            функций в PHP;</p>
+                    </li>
+                    <li class="task_item">
+                        <img src="images/web.svg" class="task__image" alt="web site icon">
+                        <p class="task_description description">Поддержка и улучшение уже существующих веб-приложений;
+                        </p>
+                    </li>
+                    <li class="task_item">
+                        <img src="images/code2.svg" class="task__image" alt="code icon">
+                        <p class="task_description description">Уметь писать код;</p>
+                    </li>
+                    <li class="task_item">
+                        <img src="images/note2.svg" class="task__image" alt="note icon">
+                        <p class="task_description description">Знание английского не ниже среднего, чтобы понимать ТЗ
+                            на английском</p>
+                    </li>
+                </ul>
+                <img src="./images/gearWhite.svg" alt="movingGear medium" class="movingGear med">
+                <img src="./images/gearWhite.svg" alt="movingGear medium" class="movingGear medBottom">
+            </div>
+        </section>
+        <section class="getWork" id="getWork">
+            <div class="getWork__inner inner flex">
+                <div class="getWork_info">
+                    <h2 class="getWork__title title">Как получить работу</h2>
+                    <ul class="getWork__list">
+                        <li class="getWork_item">
+                            <p class="getWork_item__title">Запиши Видео</p>
+                            <p class="description getWork_description">Видео рассказ о себе вместо собеседования или
+                                звонка по скайпу.</p>
+                        </li>
+                        <li class="getWork_item">
+                            <p class="getWork_item__title">Заполни форму сотрудника</p>
+                            <p class="description getWork_description">Подпиши договор о сотрудничестве, заполни форму
+                                сотрудника.</p>
+                        </li>
+                        <li class="getWork_item">
+                            <p class="getWork_item__title">Начни работу</p>
+                            <p class="description getWork_description">Вне зависимости от опыта в каждой новой компании
+                                нужно время на адаптацию. Мы это понимаем.</p>
+                        </li>
+                    </ul>
+                </div>
+                <object data="images/man.svg" type="image/svg+xml" class="getWork__img image"
+                    aria-label="Man">Man</object>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact__inner inner">
+                <h2 class="contact__title title">Откликнуться на вакансию</h2>
+                <p class="contact__description description desktop">
+                    Заполните форму для подачи заявки
+                </p>
+                <p class="contact__description description mobile">
+                    Заполните форму и отправьте заявку прямо сейчас.
+                </p>
+                <form
+                    action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeGUGwU4yhUJAInd_M04s-wkSCSac49Y4PAYyJLPto-AC_jbA/formResponse"
+                    class="contact__form flex" id="feedback" method="POST" target="hidden_iframe"
+                    onsubmit="submitted=true;">
+                    <input type="text" class="contact__input contact__input--name" placeholder="Ф. И. О."
+                        name="entry.2062924361" required id="name" aria-label="name"
+                        pattern="^[A-zА-я\s]+(([',. -][A-zА-я\s])?[A-zА-я\s]*)*$"
+                        oninvalid="setCustomValidity('Enter only english or russian letters ')"
+                        oninput="setCustomValidity('')">
+                    <input type="text" class="contact__input contact__input--socialNetwork" placeholder="Telegram/Viber"
+                        name="entry.109123077" id="socialNetwork" aria-label="Social network address">
+                    <input type="email" required class="contact__input contact__input--email" placeholder="E-mail"
+                        name="entry.650376726" id="email" aria-label="Email"
+                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                        oninvalid="setCustomValidity('xxx@xxx.xxx')" oninput="setCustomValidity('')">
+
+                    <input type="submit" value="отправить" class="button contact_button" aria-label="submit">
+                </form>
+                <object data="./images/man2.svg" type="image/svg+xml" class="contact__img image"
+                    aria-label="Working man">Working man</object>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner inner">
+            <div class="footer__top flex">
+                <a href="/" class="flex logo_wrapper">
+                    <img src="images/logoWhite.svg" class="logo__img" alt="remote employees">
+                    <div class="logo__text">
+                        <div class="logo__text--main">RemotEmployees</div>
+                        <div class="logo__text--sub">The outstaffing company</div>
+                    </div>
+                </a>
+                <ul class="footer_contact">
+                    <li class="footer_contact__inner">
+                        <a href="viber://chat/?number=%2B380666146404" target="_blank" aria-label="viber chat"
+                            class="footer_contact__link flex">
+                            <img src="images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                            <span class="footer_contact--name">Валерия: +380666146404</span>
+                        </a>
+                    </li>
+                    <li class="footer_contact__inner">
+                        <a href="viber://chat/?number=%2B380960933838" target="_blank" aria-label="viber chat"
+                            class="footer_contact__link flex">
+                            <img src="images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                            <span class="footer_contact--name">Анна: +380960933838</span>
+                        </a>
+                    </li>
+                    <li class="footer_contact__inner">
+                        <a href="viber://chat/?number=%2B380994160329" target="_blank" aria-label="viber chat"
+                            class="footer_contact__link flex">
+                            <img src="images/viber.svg" alt="Viber contact" class="footer_contact--img">
+                            <span class="footer_contact--name">Виталина: +380994160329</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer_info">
+                    <address class="address">
+                        <a href="mailto:hr@remotemployees.com" class="footer_info--email" aria-label="email"
+                            target="_blank">hr@remotemployees.com</a>
+                        <a href="https://goo.gl/maps/biE6A3f6tXTkRxLs6" class="footer_info--address"
+                            aria-label="googlemap office location" target="_blank" rel="noopener">
+                            ул. Рымарская 22, Харьков, Украина
+                        </a>
+                    </address>
+                    <div class="social-link_wrapper flex">
+                        <a href="https://www.instagram.com/remotemployees/" aria-label="instagram"
+                            class="social-link instargam"><img src="./images/insta.svg" alt="instargam icon"></a>
+                        <a href="https://fb.com/remotemployees" aria-label="facebook" class="social-link facebook"><img
+                                src="./images/fb.svg" alt="facebook icon"></a>
+                        <a href="https://t.me/remotemployees" aria-label="telegram chat"
+                            class="social-link telegram"><img src="./images/tg.svg" alt="telegram icon"></a>
+                        <a href="https://wa.me/380666146404" aria-label="whatsApp chat"
+                            class="social-link whatsapp"><img src="./images/whatsapp.svg" alt="whats app icon"></a>
+                        <a href="viber://chat/?number=%2B380666146404" aria-label="viber chat"
+                            class="social-link viber"><img src="./images/viber.svg" alt="viber icon"></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">RemotEmployees 2018-2021 © All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

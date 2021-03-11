@@ -1,0 +1,284 @@
+.thankPage__inner {
+    padding: 110px 2.3vw 150px 2.3vw;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.thankPage .navigation_link:hover {
+    color: inherit;
+}
+
+.thankPage_info {
+    margin-right: 15vw;
+}
+
+.thankPage__title {
+    width: 55%;
+    font-size: 42px;
+    max-width: 570px;
+    margin-bottom: 50px;
+}
+
+.thankPage__description {
+    margin-bottom: 80px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    max-width: 315px;
+}
+
+.thankPage__button {
+    width: 270px;
+    padding: 15px 35px;
+}
+
+.thankPage__img {
+    width: 34%;
+    top: 6%;
+    left: 10%;
+    max-width: 570px;
+}
+
+.letter {
+    position: absolute;
+    animation: letter 3s linear infinite alternate;
+}
+
+.letter.first {
+    width: 75px;
+    top: 12%;
+    left: 10%;
+}
+
+.letter.second {
+    width: 200px;
+    top: 37%;
+    left: 80%;
+}
+
+.movingGear.small {
+    width: 75px;
+    top: 10%;
+    left: -10%;
+}
+
+.movingGear.big {
+    width: 155px;
+    top: 40%;
+    left: 35%;
+}
+
+.movingGear.med {
+    width: 100px;
+    left: 78%;
+    top: 80%;
+}
+
+@keyframes letter {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(5deg);
+    }
+
+    20% {
+        transform: rotate(-5deg);
+    }
+
+    30% {
+        transform: rotate(4deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    60% {
+        transform: rotate(-3deg);
+    }
+
+    70% {
+        transform: rotate(2deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }
+
+    90% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+@media (max-width:1135px) {
+    .thankPage__inner {
+        padding: 70px 2.3vw 130px 2.3vw;
+    }
+
+    .thankPage__img {
+        width: 36%;
+        top: 7%;
+        left: 10%;
+        max-width: 570px;
+    }
+
+
+    .thankPage_info {
+        margin-right: 10vw;
+    }
+
+
+    .movingGear.small {
+        display: none;
+    }
+
+    .letter.second {
+        width: 140px;
+        top: 36%;
+        left: 83%;
+    }
+}
+
+@media (max-width:960px) {
+
+    .letter.second {
+        display: none;
+    }
+
+    .letter.first {
+        top: 50%;
+        left: 30%;
+    }
+
+    .movingGear.big {
+        top: 15%;
+        left: 5%;
+    }
+
+    .thankPage__inner {
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thankPage__button {
+        width: 310px;
+        padding: 15px 35px;
+    }
+
+    .thankPage_info {
+        margin-right: 0px;
+    }
+
+    .thankPage__title,
+    .thankPage__description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .thankPage__img {
+        width: 45%;
+        position: relative;
+        left: 0%;
+        top: 0;
+        margin: 0 auto;
+        min-width: 300px;
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .movingGear.big {
+        width: 130px;
+        top: 20%;
+        left: 1%;
+    }
+
+    .letter.first {
+        top: 53%;
+        left: 28%;
+    }
+}
+
+@media (max-width: 565px) {
+
+    .letter.first {
+        top: 50%;
+        left: 22%;
+    }
+
+    .movingGear.big {
+        display: none;
+    }
+
+
+    .movingGear.med {
+        width: 80px;
+        left: 70%;
+        top: 70%;
+    }
+
+    .thankPage__title.title {
+        font-size: 35px;
+    }
+
+
+    .thankPage__description.description {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .letter.first {
+        top: 47%;
+        left: 12%;
+    }
+
+    .thankPage__inner {
+        padding: 50px 20px;
+    }
+
+    .thankPage__img {
+        width: 100%;
+        left: -4%;
+    }
+
+    .thankPage__title.title {
+        margin-bottom: 35px;
+    }
+
+    .thankPage__description.description {
+        margin-bottom: 35px;
+    }
+
+    .thankPage__title,
+    .thankPage__description {
+        width: 100%;
+        text-align: left;
+    }
+
+    .thankPage__button {
+        width: 100%;
+        padding: 15px 35px;
+        max-width: 300px;
+        margin-left: 0px;
+    }
+
+    .movingGear.med {
+        display: none;
+    }
+
+}

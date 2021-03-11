@@ -1,0 +1,390 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 35px #fff inset !important;
+}
+
+.banner {
+    position: relative;
+
+}
+
+.banner .movingGear.med {
+    width: 60px;
+    top: 0%;
+    left: -10%;
+}
+
+.banner .movingGear.small {
+    width: 42px;
+    top: 40%;
+    left: -4%;
+}
+
+.banner .movingGear.big {
+    width: 105px;
+    top: 60%;
+    left: -17%;
+}
+
+.banner_info {
+    max-width: 480px;
+    width: 40%;
+}
+
+.banner__description {
+    margin: 30px 0px 50px 0px;
+}
+
+.banner__title {
+    font-size: 42px;
+}
+
+.banner__img {
+    width: 60%;
+    max-width: 750px;
+    left: 40%;
+}
+
+.banner .button {
+    width: 300px;
+    padding: 15px 25px;
+}
+
+.aboutUs__description {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.aboutUs__title {
+    max-width: 470px;
+    position: relative;
+}
+
+.aboutUs__inner,
+.getWork__inner {
+    justify-content: flex-end;
+}
+
+.aboutUs_info {
+    width: 50%;
+    max-width: 500px;
+    position: relative;
+}
+
+.aboutUs__img {
+    max-width: 675px;
+    width: 53%;
+    top: 12%;
+    order: -1;
+    left: 1%;
+}
+
+.tasks {
+    background-color: #EBF8E3;
+    overflow: hidden;
+}
+
+.tasks__title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.tasks .movingGear.big {
+    width: 310px;
+    left: -35%;
+}
+
+.tasks .movingGear.med {
+    width: 102px;
+    left: 110%;
+    top: 10%;
+}
+
+.tasks .movingGear.medBottom {
+    bottom: -9%;
+    left: 85%;
+    width: 170px;
+    animation-duration: 7s;
+}
+
+.tasks__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    row-gap: 150px;
+    position: relative;
+}
+
+.tasks__list::after {
+    content: "";
+    background-image: url("../images/lineGreen.svg");
+    position: absolute;
+    width: 851px;
+    height: 30px;
+    left: 12%;
+    top: 44%;
+    animation: line 3s linear infinite alternate;
+    transform-origin: left;
+}
+
+.task_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 290px;
+}
+
+.task_item::after {
+    content: "";
+    background-image: url("../images/gearWhite.svg");
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 95%;
+    top: 17%;
+    animation: rotateGear 3s linear infinite;
+}
+
+.task_item:nth-child(4)::after,
+.task_item:last-child::after {
+    display: none;
+}
+
+
+@keyframes line {
+    /*from{
+        transform: translate(-100px) scale(0.6);
+    }
+    to{
+        transform: translate(100px) scale(1);
+    }*/
+}
+
+.task_description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.getWork_info {
+    position: relative;
+    left: 1%;
+}
+
+.getWork__img {
+    max-width: 650px;
+    width: 50%;
+    top: 30%;
+    order: -1;
+    left: 0%;
+}
+
+.getWork_item__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+
+.getWork_item {
+    position: relative;
+}
+
+.getWork_item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.getWork_item::before {
+    position: absolute;
+    top: 20%;
+    left: -22%;
+    width: 80px;
+    height: 80px;
+    background-size: 80px;
+    content: "";
+}
+
+.getWork_item:last-child:before {
+    background-image: url("../images/ok.svg");
+}
+
+.getWork_item:nth-child(2):before {
+    background-image: url("../images/pan.svg");
+}
+
+.getWork_item:first-child:before {
+    background-image: url("../images/camera.svg");
+}
+
+.contact__inner {
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+.contact__title {
+    margin-bottom: 0px;
+}
+
+.contact__description {
+    margin: 30px 0px;
+    font-size: 20px;
+    color: #002442;
+}
+
+.contact__form {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact__input {
+    width: 470px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #F2F7FF;
+    border: 1px solid #8AB7EB;
+    font-weight: 300;
+    font-size: 16px;
+    color: #7A7A7A;
+    transition: 0.3s;
+    outline-style: none;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.contact__description.mobile {
+    display: none;
+}
+
+.button.contact_button {
+    margin-top: 30px;
+    width: 470px;
+    text-align: center;
+}
+
+.contact__input:active,
+.contact__input:focus,
+.contact__input:hover {
+    background: #FFFFFF;
+    border: 1px solid #0062D1;
+    color: #37474F;
+}
+
+
+.contact__img {
+    max-width: 700px;
+    width: 60%;
+    top: 10%;
+    left: 41.5%;
+}
+
+@media (max-width:1225px) {
+
+    .inner:not(.header__inner) {
+        padding: 90px 2.3vw;
+    }
+
+    .banner__img {
+        width: 57%;
+        max-width: 690px;
+        left: 41%;
+    }
+
+    .aboutUs__img {
+        max-width: 600px;
+        width: 50%;
+        top: 14%;
+        left: 1%;
+    }
+
+    .getWork__img {
+        max-width: 600px;
+        width: 50%;
+        top: 30%;
+        left: -2%;
+    }
+
+    .getWork_info {
+        margin-right: 20px;
+    }
+
+    .getWork_item {
+        max-width: 400px;
+    }
+
+    .contact__img {
+        max-width: 650px;
+        min-width: 550px;
+        width: 55%;
+        top: 27%;
+        left: 44%;
+    }
+
+    .getWork_item::before {
+        position: absolute;
+        object-fit: cover;
+        top: 20%;
+        left: -25%;
+        width: 70px;
+        height: 70px;
+        background-size: 70px;
+
+    }
+
+    .contact__input,
+    .contact .button {
+        width: 430px;
+    }
+}
+
+@media (max-width:1100px) {
+    .tasks__list::after {
+        width: 90%;
+        left: 7%;
+        top: 46%;
+        max-width: 850px;
+    }
+
+    .getWork__img {
+        max-width: 600px;
+        width: 50%;
+        top: 33%;
+        left: -4%;
+    }
+
+    .aboutUs__img {
+        max-width: 600px;
+        min-width: 450px;
+        width: 48%;
+        top: 20%;
+        left: 0%;
+    }
+
+    .aboutUs_info {
+        min-width: 470px;
+        margin-left: 15px;
+    }
+
+    div.aboutUs__inner.inner,
+    div.contact__inner.inner {
+        padding-top: 50px;
+    }
+
+    .contact__img {
+        min-width: 520px;
+        width: 48%;
+        top: 30%;
+        left: 47%;
+    }
+
+    .banner__img {
+        width: 59%;
+        max-width: 690px;
+        min-width: 580px;
+        left: 39%;
+        top: 28%;
+    }
+}
